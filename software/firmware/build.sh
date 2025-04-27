@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-z80asm --make-bin monitor.asm
+docker run  -v .:/src/ -it z88dk/z88dk z80asm -b monitor.asm
