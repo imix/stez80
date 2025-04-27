@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ez80")(type "KiCad")(uri "${KIPRJMOD}/Z80-CPU-for-KiCAD/Zilog_ez80.kicad_sym")(options "")(descr ""))
+  (lib (name "SteZ80")(type "KiCad")(uri "${KIPRJMOD}/SteZ80.kicad_sym")(options "")(descr ""))
+)

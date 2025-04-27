@@ -1,0 +1,111 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "8f25e73c-50ea-4100-9671-d49097d9068a")
+	(paper "A4")
+	(title_block
+		(title "Ste z80 board")
+		(rev "V0.1")
+	)
+	(lib_symbols)
+	(sheet
+		(at 154.94 38.1)
+		(size 12.7 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a5ee72ab-b6ae-4be4-95d4-715b05ad0242")
+		(property "Sheetname" "CPU"
+			(at 154.94 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu.kicad_sch"
+			(at 154.94 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "stez80"
+				(path "/8f25e73c-50ea-4100-9671-d49097d9068a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 38.1)
+		(size 13.97 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c8b9b429-80e8-4d6d-8183-d321c0e584df")
+		(property "Sheetname" "Support"
+			(at 179.07 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "support.kicad_sch"
+			(at 179.07 62.8146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Field2" ""
+			(at 179.07 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "stez80"
+				(path "/8f25e73c-50ea-4100-9671-d49097d9068a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
