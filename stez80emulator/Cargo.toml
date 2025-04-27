@@ -1,0 +1,9 @@
+[package]
+name = "stez80emulator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iz80 = { git = "https://github.com/ivanizag/iz80" }
+termios = "0.3"
+ctrlc = "3.2"
