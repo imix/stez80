@@ -1,5 +1,8 @@
 	org	00000h
 
+INCLUDE "Constants.inc"
+INCLUDE "ascii.inc"
+
 	ld sp,01000h
 
 	call MonitorMenu
@@ -36,13 +39,15 @@ str_info: defb "For help type ?",0
 CmdParser:
 	ld HL, str_prompt
 	call PrintStr
-	call ReadLine
+	call ReadWord
 	ld HL, LINEBUF
 cmd_help:
 	ld DE, str_help
 	call StrCmp
 	or a
 	jr nz, cmd_reg
+	ld a, LF
+	out (Char), a
 	ld HL, help_all
 	call PrintLn
 	ret
@@ -51,13 +56,15 @@ cmd_reg:
 	call StrCmp
 	or a
 	jr nz, cmd_peek
+	ld a, LF
+	out (Char), a
 	call DumpRegisters
 	ret
 cmd_peek:
 	ld DE, str_reg
 	call StrCmp
 	or a
-	jr nz, cmd_peek
+	jr nz, cmd_poke
 	call DumpRegisters
 	ret
 cmd_poke:
@@ -101,6 +108,39 @@ str_cmp_notequal:
 	ld a, 1
 	ret
 
+; ReadWord reads a word terminated by Space or CR
+; it prints the word while typing
+; returns: String read in memory pointed to by DE
+ReadWord:
+	ld DE, LINEBUF
+@loop:
+	call GetChar
+	cp 0x20
+	jr z, @done
+	cp 0x0D
+	jr z, @done
+	cp 0x08
+	jr z, @backspace
+	out (Char), a
+	ld (DE), a
+	inc DE
+	jr @loop
+@done:
+	ld a, 0x00
+	ld (DE), a
+	ld a, 0x20
+	out (Char), a
+	ret
+@backspace:
+	ld a, 0x08
+	out (Char), a 	; send a backspace
+	ld a, 0x20
+	out (Char), a 	; delete by sending space
+	ld a, 0x08
+	out (Char), a 	; and go one more back
+	dec DE
+	jr @loop
+
 ; ReadLine reads a line terminated by CR 
 ; it prints the line while typing and ends with LF
 ; returns: String read in memory pointed to by DE
@@ -110,14 +150,14 @@ read_next_char_loop:
 	call GetChar
 	cp 0x0D
 	jr z, read_line_done
-	out (0x02), a
+	out (Char), a
 	ld (DE), a
 	inc DE
 	jr read_next_char_loop
 read_line_done:
 	ld a, 0x00 	; zero terminate
 	ld (DE), a
-	ld a, 0x0A
+	ld a, LF
 	out (002h),a
 	ret
 
@@ -127,10 +167,10 @@ LINEBUF: defs 32
 ; GetChar reads a single character
 ; returns: character in A
 GetChar:
-	in a,(003h)
+	in a,(CharReady)
 	or a
 	jr z, GetChar
-	in a,(002h)
+	in a,(Char)
 	ret
 
 ; PrintChar prints a single character
@@ -143,7 +183,7 @@ PrintChar:
 ; param: HL -> points to string, zero terminated
 PrintLn:
 	call PrintStr
-	ld a, 0x0A
+	ld a, LF
 	out (002h),a
 	ret
 
@@ -284,7 +324,7 @@ DumpRegisters:
 	call PrintHexWord
 
 	; print LF
-	ld a, 0x0A
+	ld a, LF
 	out (002h),a
 
 	pop IY
