@@ -7481,7 +7481,7 @@
 		)
 		(uuid "0cd612ca-165a-4229-b8cc-357d88f3a546")
 	)
-	(label "AddressBus4"
+	(label "AddressBus3"
 		(at 92.71 62.23 180)
 		(effects
 			(font
@@ -7521,7 +7521,7 @@
 		)
 		(uuid "3b7e575e-cf58-4ccd-a56a-5fd109d4d011")
 	)
-	(label "AddressBus5"
+	(label "AddressBus2"
 		(at 92.71 64.77 180)
 		(effects
 			(font
@@ -7541,7 +7541,7 @@
 		)
 		(uuid "4a824bfa-6f2f-4c8c-bd5e-fa73267e383f")
 	)
-	(label "AddressBus7"
+	(label "AddressBus0"
 		(at 92.71 69.85 180)
 		(effects
 			(font
@@ -7561,7 +7561,7 @@
 		)
 		(uuid "518695a5-bf7b-459e-996b-76ce1a8f6aff")
 	)
-	(label "AddressBus6"
+	(label "AddressBus1"
 		(at 92.71 67.31 180)
 		(effects
 			(font
@@ -7601,7 +7601,7 @@
 		)
 		(uuid "8ba2d454-47ce-4589-a8ab-ee1cd95b781d")
 	)
-	(label "AddressBus0"
+	(label "AddressBus7"
 		(at 92.71 52.07 180)
 		(effects
 			(font
@@ -7621,7 +7621,7 @@
 		)
 		(uuid "bdb6a537-7b1d-46b7-8137-0a85f487a469")
 	)
-	(label "AddressBus2"
+	(label "AddressBus5"
 		(at 92.71 57.15 180)
 		(effects
 			(font
@@ -7661,7 +7661,7 @@
 		)
 		(uuid "cf92dfa2-a39b-4544-b3f9-bf2b5eb209ab")
 	)
-	(label "AddressBus3"
+	(label "AddressBus4"
 		(at 92.71 59.69 180)
 		(effects
 			(font
@@ -7681,7 +7681,7 @@
 		)
 		(uuid "f5f32c25-a0c3-418d-bd46-881d83133215")
 	)
-	(label "AddressBus1"
+	(label "AddressBus6"
 		(at 92.71 54.61 180)
 		(effects
 			(font
@@ -11683,7 +11683,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal_CircularHoles"
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal"
 			(at 26.67 177.546 0)
 			(effects
 				(font
@@ -11752,7 +11752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset4.94mm"
+		(property "Footprint" "Connector_Dsub:DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 276.86 101.6 0)
 			(effects
 				(font
