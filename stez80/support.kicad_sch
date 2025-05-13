@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Ste z80 board")
+		(date "2025-05-11")
 		(rev "V0.1")
 	)
 	(lib_symbols
@@ -8757,7 +8758,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-40_W15.24mm"
+		(property "Footprint" "Package_DIP:DIP-40_W15.24mm_LongPads"
 			(at 53.34 95.25 0)
 			(effects
 				(font
@@ -10595,7 +10596,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_LongPads"
 			(at 238.76 96.52 0)
 			(effects
 				(font

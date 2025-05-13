@@ -6,6 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Ste z80 board")
+		(date "2025-05-11")
 		(rev "V0.1")
 	)
 	(lib_symbols
@@ -4532,7 +4533,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "74hc14 unsed/power"
+	(text_box "74hc14 unused/power"
 		(exclude_from_sim no)
 		(at 16.51 135.89 0)
 		(size 118.11 48.26)
@@ -9692,7 +9693,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C1008-xxP"
+		(property "Value" "AS6C1008-55PCN"
 			(at 172.3233 45.72 0)
 			(effects
 				(font
@@ -9701,7 +9702,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-32_W15.24mm"
+		(property "Footprint" "Package_DIP:DIP-32_W15.24mm_LongPads"
 			(at 170.18 71.12 0)
 			(effects
 				(font
@@ -9710,7 +9711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C1008_Mar_2023V1.2.pdf"
+		(property "Datasheet" "kicad-embed://AS6C1008.PDF"
 			(at 170.18 71.12 0)
 			(effects
 				(font
@@ -10545,7 +10546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080"
+		(property "Datasheet" "kicad-embed://Z8400.PDF"
 			(at 59.69 71.12 0)
 			(effects
 				(font
@@ -11866,7 +11867,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W15.24mm"
+		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_LongPads"
 			(at 243.84 76.2 0)
 			(effects
 				(font
