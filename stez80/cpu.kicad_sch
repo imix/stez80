@@ -11208,7 +11208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9604c789-19ca-42dc-9fb9-f04155027e95")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 109.22 148.5899 0)
 			(effects
 				(font
@@ -11286,7 +11286,7 @@
 		(instances
 			(project "stez80"
 				(path "/8f25e73c-50ea-4100-9671-d49097d9068a/a5ee72ab-b6ae-4be4-95d4-715b05ad0242"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -11466,7 +11466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b18927e8-4e16-47f4-b8d2-20dbc8a33e1f")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 52.07 38.0999 0)
 			(effects
 				(font
@@ -11544,7 +11544,7 @@
 		(instances
 			(project "stez80"
 				(path "/8f25e73c-50ea-4100-9671-d49097d9068a/a5ee72ab-b6ae-4be4-95d4-715b05ad0242"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
