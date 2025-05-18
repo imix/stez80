@@ -5283,7 +5283,7 @@
 	(text_box "Memory Mapping logic"
 		(exclude_from_sim no)
 		(at 17.78 16.51 0)
-		(size 111.76 139.7)
+		(size -111.76 139.7)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5296,7 +5296,7 @@
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left top)
+			(justify right top)
 		)
 		(uuid "f9ed7d10-aff5-412c-9c14-2961484be16f")
 	)
@@ -8707,7 +8707,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H7.3mm"
 			(at 204.47 147.32 0)
 			(effects
 				(font
